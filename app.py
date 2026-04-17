@@ -28,15 +28,15 @@ st.set_page_config(
 # ─────────────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-.def-box   {background:#e3f2fd;padding:12px 16px;border-left:4px solid #1565c0;border-radius:4px;margin:8px 0;}
-.thm-box   {background:#fff8e1;padding:12px 16px;border-left:4px solid #f57f17;border-radius:4px;margin:8px 0;}
-.key-box   {background:#e8f5e9;padding:12px 16px;border-left:4px solid #2e7d32;border-radius:4px;margin:8px 0;}
-.rmk-box   {background:#f3e5f5;padding:12px 16px;border-left:4px solid #6a1b9a;border-radius:4px;margin:8px 0;}
-.ex-box    {background:#fce4ec;padding:12px 16px;border-left:4px solid #880e4f;border-radius:4px;margin:8px 0;}
-.prop-box  {background:#e0f7fa;padding:12px 16px;border-left:4px solid #006064;border-radius:4px;margin:8px 0;}
-h2 {color:#1a237e;}
-h3 {color:#283593;}
-h4 {color:#303f9f;}
+/* Force dark text in all boxes — works on both light AND dark Streamlit themes */
+.def-box   {background:#dbeafe;padding:12px 16px;border-left:4px solid #1d4ed8;border-radius:4px;margin:8px 0;color:#0f172a !important;}
+.thm-box   {background:#fef9c3;padding:12px 16px;border-left:4px solid #ca8a04;border-radius:4px;margin:8px 0;color:#0f172a !important;}
+.key-box   {background:#dcfce7;padding:12px 16px;border-left:4px solid #15803d;border-radius:4px;margin:8px 0;color:#0f172a !important;}
+.rmk-box   {background:#f3e8ff;padding:12px 16px;border-left:4px solid #7e22ce;border-radius:4px;margin:8px 0;color:#0f172a !important;}
+.ex-box    {background:#ffe4e6;padding:12px 16px;border-left:4px solid #9f1239;border-radius:4px;margin:8px 0;color:#0f172a !important;}
+.prop-box  {background:#cffafe;padding:12px 16px;border-left:4px solid #0e7490;border-radius:4px;margin:8px 0;color:#0f172a !important;}
+/* Ensure all child elements inside boxes also get dark text */
+.def-box *, .thm-box *, .key-box *, .rmk-box *, .ex-box *, .prop-box * {color:#0f172a !important;}
 .stTabs [data-baseweb="tab-list"] {gap:4px;}
 .stTabs [data-baseweb="tab"] {padding:6px 14px;font-size:0.85rem;}
 </style>
